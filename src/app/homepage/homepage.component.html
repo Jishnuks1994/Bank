@@ -1,0 +1,133 @@
+
+  <div class="container-fluid mt-1">
+    <button id="button" type="button" class="btn btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i></button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+          <button class="py-3 mt-1 border-bottom  d-flex justify-content-center align-items-center btn text-light" data-bs-toggle="modal" data-bs-target="#viewProfile">View Profile<i class="ms-2 fa-solid fa-user fa-2xl" style="color: #ffde0a;"></i></button>
+          <button data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" class="py-3 mt-1 border-bottom d-flex justify-content-center align-items-center btn text-light">Balance Enquiry<i class="ms-2  fa-solid fa-sack-dollar fa-2xl" style="color: #ffde0a;"></i></button>
+          <button data-bs-toggle="modal" data-bs-target="#moneyTransfer" class="btn text-light py-3 mt-1 border-bottom d-flex justify-content-center align-items-center">Money Transfer <i class="ms-2  fa-solid fa-money-bill-transfer fa-2xl" style="color: #ffde0a;"></i></button>
+          <button class="btn text-light py-3 mt-1 border-bottom d-flex justify-content-center align-items-center">Account Statement <i class="ms-2  fa-regular fa-rectangle-list fa-2xl" style="color: #ffde0a;"></i></button>
+          <button class="btn text-light py-3 mt-1 border-bottom d-flex justify-content-center align-items-center">Log Out <i class="ms-2  fa-solid fa-right-from-bracket fa-2xl" style="color: #ffde0a;"></i></button>
+          <button class="btn text-light py-3 mt-1 border-bottom d-flex justify-content-center align-items-center ">Delete Account <i class="ms-2 fa-solid fa-trash fa-2xl" style="color: #ffde0a;"></i></button>
+        
+        </div>
+        <div class="d-flex justify-content-center mt-5"><i class="fa-solid fa-building-columns fa-2xl" style="color: white;"></i></div>
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="mt-5 mb-5 row">
+        <div class="col-lg-6 col-md-6 col-sm-6 p-5">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.postimg.cc/TPLHdqvS/bank.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.postimg.cc/0y5VFpz9/mobile-internet-banking-1.webp" class="d-block w-100" alt="internetMobile">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.postimg.cc/d0cVJmyT/fixed.jpg" class="d-block w-100" alt="FixedDeposit">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 p-5">
+<h1>Welcome to SBI</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita autem illum beatae magnam numquam nam quia suscipit hic, praesentium tempore eius repudiandae, qui iste provident animi quo quaerat. Earum, illum!</p>
+</div>
+</div>
+</div>
+
+<!-- modelbox for view profile -->
+<div class="modal fade" id="viewProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" id="c">
+        <h1 class="modal-title text-light fs-5" id="exampleModalLabel">User Details</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+            <img src="https://i.postimg.cc/NfZgCG8Y/user.png" alt="user" class="container w-50">
+          
+        </div>
+          <div class="mt-5">
+            <h4>User Name : Name</h4>
+            <h4>Account Number : 1234</h4>
+          </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn text-light" id="c" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- balance Enquiry -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header" id="c">
+    <h5 class="offcanvas-title text-light" id="offcanvasExampleLabel">Balance Enquiry</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body text-light" id="c">
+    <div>
+      <img src="https://i.postimg.cc/x8y4vRPc/cartoon-money-damaged-homes-22824295.jpg" alt="balance" class="w-75">
+    </div>
+   
+    <div>
+      <h4>hi "username" </h4>
+      <p>Your account balance is 1234</p>
+    <h4 class="mt-5">Balance</h4>    
+</div>
+
+  </div>
+</div>
+
+<!-- money transfer -->
+<div class="modal fade" id="moneyTransfer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" id="c">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Money Transfer</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <img src="https://i.postimg.cc/8cPNz4zJ/0-r057gqx3gyooy-bk.jpg" alt="moneyTransfer" class="w-50">
+        </div>
+        <form>
+          <div><input type="text" id="" name="" class="form-control mt-2" placeholder="Account number of the beneficiary"></div>
+          <div><input type="text" id="" name=""  placeholder="Amount" class="form-control mt-2"></div>
+          <div><input type="text" id="" name=""  placeholder="Password" class="form-control mt-2"></div>
+          <div><button class="btn mt-5 form-control" id="c">Transfer</button></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="c" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
