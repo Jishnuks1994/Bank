@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HomepageComponent } from '../homepage/homepage.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,6 +9,8 @@ import { HomepageComponent } from '../homepage/homepage.component';
 })
 export class LoginComponent {
 
+  constructor(private rout:Router){}
+
   data="Happy Banking with us..."
   pdata="Enter Username"
 
@@ -15,9 +18,7 @@ export class LoginComponent {
   psw:any=""
 
   login(){
-  console.log(this.acno);
-  console.log(this.psw);
-       
+    this.rout.navigateByUrl("homepage")
   }
 
 }
