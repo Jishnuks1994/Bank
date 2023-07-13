@@ -27,9 +27,9 @@
         <div id="d" class="col-lg-6 col-md-6 col-sm-6 p-5 border rounded-5 bg-secondary-subtle">
             <form>
                 <h1>Log In</h1>
-                <div><input #acno class="form-control mt-2" type="text" [placeholder]="pdata"></div>
-                <div><input #psw  class="form-control mt-2" type="text" placeholder="Enter Password"></div>
-                <div><button (click)="login(acno,psw)"class="btn btn-primary mt-2">Log In</button></div>
+                <div><input [(ngModel)]="acno" id="u1" name="acno" class="form-control mt-2" type="text" [placeholder]="pdata"></div>
+                <div><input [(ngModel)]="psw" id="p1" name="psw" class="form-control mt-2" type="text" placeholder="Enter Password"></div>
+                <div><button (click)="login()" type="submit" class="btn btn-primary mt-2">Log In</button></div>
                 <div><p class="mt-2">Dont have an account? <a href="register" class="link text-decoration-none link-dark">click here to sign up</a></p></div>
             </form>
             

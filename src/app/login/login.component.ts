@@ -7,16 +7,16 @@ import { HomepageComponent } from '../homepage/homepage.component';
   styleUrls: ['./login.component.css' ]
 })
 export class LoginComponent {
-  
+
   data="Happy Banking with us..."
   pdata="Enter Username"
+
   acno:any=""
   psw:any=""
 
-  login(a:any,b:any){
-    console.log(a.value);
-    console.log(b.value);
-    
+  login(){
+  console.log(this.acno);
+  console.log(this.psw);
        
   }
 
