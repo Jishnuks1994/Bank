@@ -7,9 +7,14 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {
-  constructor(private rout:Router){}
-statement(){
-  this.rout.navigateByUrl("statement")
+  constructor(public rout:Router){}
+
+// statement(){
+//   this.rout.navigateByUrl("statement")
+// }
+
+logout(){
+  this.rout.navigateByUrl("")
 }
 
 }
